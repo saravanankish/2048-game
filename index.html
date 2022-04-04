@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+    <title>2048</title>    
+</head>
+<body>
+    <header class="header-container">
+        <div  class="header">
+            <h2 class="heading">2048</h2>
+            <div class="score-container">
+                <div class="scores">
+                    <p class="info">Best</p>
+                    <p class="score" id="best-score">0</p>
+                </div>
+                <div class="scores">
+                    <p class="info">Score</p>
+                    <p class="score" id="current-score">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="new-game">
+            <p class="hint"><b>Hint:</b>Use arrow keys to play after click on the screen</p>
+            <button type="btn" class="btn" id="reset">Reset Data</button>
+            <button type="btn" class="btn" id="new-game">New Game</button>
+        </div>
+    </header>
+    <div id="game-board">
+    </div>
+    <script src="./static/js/script.js" type="module"></script>
+</body>
+</html>
